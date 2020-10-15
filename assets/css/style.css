@@ -6,12 +6,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* ==========================================HEADER========================================= */
-
-header nav {
+/* ==========================================NAV BAR========================================= */
+nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-family: 'Karla', sans-serif;
 }
 nav li {
@@ -20,15 +19,22 @@ nav li {
     margin-left: 15px;
     text-transform: uppercase;
 }
-nav li:last-child {
-    border: 2px solid black;
-    padding: 5px 10px;
-}
-nav li:last-child a {
-    color: black;
-}
 nav a {
     text-decoration: none;
     color: rgb(156,154,159);
 }
+nav a:hover {
+    color: black;
+}
+/* ============VIEW PLANS========== */
+nav li:last-child a {
+    border: 2px solid black;
+    padding: 5px 10px;
+    color: black;
+}
+nav li:last-child a:hover {
+    background-color: black;
+    color: white;
+}
+
 
