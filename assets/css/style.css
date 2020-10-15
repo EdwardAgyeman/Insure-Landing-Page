@@ -45,7 +45,7 @@ nav li:last-child a:hover {
     height: 70vh;
     padding: 50px 100px;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 #bg-pattern-intro-left {
     position: absolute;
