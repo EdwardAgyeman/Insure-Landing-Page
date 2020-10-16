@@ -171,8 +171,8 @@ footer {
     margin-left: 15px;
     text-transform: uppercase;
 }
-#social-media img:hover {
-    color: black;
+#social-media ul img:hover {
+    filter: brightness(0%);
 }
 
 #footer-nav {
@@ -182,8 +182,6 @@ footer {
     margin-top: 20px;
 }
 #footer-nav ul {
-    /* display: inline-block; */
-
     padding: 0;
 }
 #footer-nav li {
