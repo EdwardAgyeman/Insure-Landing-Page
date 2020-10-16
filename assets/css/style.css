@@ -15,7 +15,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Karla', sans-serif;
 }
 nav li {
     list-style-type: none;
@@ -151,4 +150,50 @@ section article img {
     top: 0;
     right: 0;
     width: 400px;
+}
+/* ==========================================FOOTER========================================= */
+footer {
+    height: 40vh;
+    background: url(/assets/images/bg-pattern-footer-desktop.svg) 0% -100% no-repeat;
+    background-color: rgb(250,250,250);
+    padding: 50px 100px;
+}
+#social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(156,154,159);
+}
+#social-media li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+#social-media img:hover {
+    color: black;
+}
+
+/* #footer-nav {
+    display: flex;
+    justify-content: space-between;
+} */
+#footer-nav ul {
+    display: inline-block;
+}
+#footer-nav li {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgb(156,154,159);
+    line-height: 1.5;
+}
+#footer-nav li:first-child {
+    margin-bottom: 20px;
+}
+#footer-nav a {
+    text-decoration: none;
+    color: black;
+}
+#footer-nav a:hover {
+    text-decoration: underline;
 }
