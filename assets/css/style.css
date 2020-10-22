@@ -76,7 +76,6 @@ nav li:last-child a:hover {
     color: white;
     height: 70vh;
     padding: 50px 100px;
-    position: relative;
     overflow: hidden;
     margin-top: 50px;
 }
@@ -94,16 +93,17 @@ nav li:last-child a:hover {
 }
 #family {
     position: absolute;
-    top: 100px;
-    right: 200px;
-    width: 450px;
+    top: 120px;
+    /* left: 660px; */
+    right: 100px;
+    width: 35%;
 }
 #intro h2 {
     line-height: 1;
 }
 #intro p {
     width: 50%;
-    margin: 40px 0;
+    margin: 20px 0;
     line-height: 1.5;
 }
 #intro a {
@@ -116,7 +116,7 @@ nav li:last-child a:hover {
 }
 /* ============MAIN========== */
 section {
-    padding: 50px 100px;
+    padding: 150px 100px;
 }
 section .line-before::before {
     background-color: black;
@@ -144,7 +144,8 @@ section article img {
     position: relative;
     width: 100%;
     color: white;
-    background: rgb(44,39,63) url(/assets/images/bg-pattern-how-we-work-desktop.svg) right top no-repeat;
+    background: rgb(44,39,63) url(/assets/images/bg-pattern-how-we-work-desktop.svg) no-repeat right top;
+    background-size: contain;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -206,4 +207,86 @@ footer {
 }
 #footer-nav a:hover {
     text-decoration: underline;
+}
+/* =========================================MOBILE======================================= */
+@media screen and (max-width: 900px) {
+    body {
+        text-align: center;
+    }
+    /* nav {
+        background-color: gray;
+    } */
+    nav ul {
+        display: none;
+    }
+    #family {
+        position: static;
+        width: 100%;
+        margin-top: 50px;
+    }
+    #intro {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 100px 50px;
+    }
+    #intro p {
+        width: 90%;
+        margin: 20px 0;
+    }
+    #intro h2 {
+        font-size: 2.4rem;
+        margin: 0 auto;
+    }
+    section {
+        padding: 150px 20px;
+    }
+    section article {
+        width: 80%;
+    }
+    #cards {
+        display: block;
+    }
+    #how-we-work {
+        position: relative;
+        width: 100%;
+        color: white;
+        background: rgb(44,39,63) url(/assets/images/bg-pattern-how-we-work-mobile.svg) no-repeat right;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        margin: 150px auto;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+    #how-we-work h2 {
+        margin: 0;
+        line-height: 1;
+    }
+    #how-we-work a {
+        margin-top: 30px;
+    }
+    footer {
+        height: auto;
+        padding: 50px;
+    }
+    #footer-nav, #social-media {
+        display: block;
+    }
+    #footer-nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #social-media ul {
+        padding: 0 70px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+    }
+    #social-media li {
+        margin-left: 0;
+    }
 }
