@@ -72,12 +72,13 @@ nav li:last-child a:hover {
 }
 /* ============INTRO========== */
 #intro {
-    background-color: rgb(44,39,63);
     color: white;
     height: 70vh;
     padding: 50px 100px;
-    overflow: hidden;
     margin-top: 50px;
+    background-color: rgb(44,39,63);
+    background: url(../images/bg-pattern-intro-left-desktop.svg) no-repeat 0% 552%, url(../images/bg-pattern-intro-right-desktop.svg) no-repeat right;
+    background-color: rgb(44,39,63);
 }
 #bg-pattern-intro-left {
     position: absolute;
@@ -144,7 +145,7 @@ section article img {
     position: relative;
     width: 100%;
     color: white;
-    background: rgb(44,39,63) url(/assets/images/bg-pattern-how-we-work-desktop.svg) no-repeat right top;
+    background: rgb(44,39,63) url(../images/bg-pattern-how-we-work-desktop.svg) no-repeat right top;
     background-size: contain;
     display: flex;
     justify-content: space-between;
@@ -162,7 +163,7 @@ section article img {
 /* ==========================================FOOTER========================================= */
 footer {
     height: 40vh;
-    background: url(/assets/images/bg-pattern-footer-desktop.svg) 0% -30% no-repeat;
+    background: url(../images/bg-pattern-footer-desktop.svg) 0% -30% no-repeat;
     background-color: rgb(250,250,250);
     padding: 50px 100px;
 }
@@ -232,6 +233,8 @@ footer {
         align-items: center;
         height: auto;
         padding: 100px 50px;
+        background: url(../images/bg-pattern-intro-left-mobile.svg) no-repeat top left, url(../images/bg-pattern-intro-right-mobile.svg) no-repeat bottom right;
+        background-color: rgb(44,39,63);
     }
     #intro p {
         width: 90%;
@@ -254,7 +257,7 @@ footer {
         position: relative;
         width: 100%;
         color: white;
-        background: rgb(44,39,63) url(/assets/images/bg-pattern-how-we-work-mobile.svg) no-repeat right;
+        background: rgb(44,39,63) url(../images/bg-pattern-how-we-work-mobile.svg) no-repeat right;
         background-size: contain;
         display: flex;
         flex-direction: column;
