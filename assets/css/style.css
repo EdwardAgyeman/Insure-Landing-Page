@@ -11,6 +11,18 @@ body {
     font-family: 'Karla', sans-serif;
 }
 /* ==========================================NAV BAR========================================= */
+#mobile-nav {
+    display: none;
+    height: auto;
+    width: auto;
+}
+#mobile-nav span {
+    display: block;
+    margin-bottom: 5px;
+    height: 2px;
+    width: 20px;
+    background-color: black;
+}
 nav {
     position: fixed;
     top: 0;
@@ -214,16 +226,30 @@ footer {
     body {
         text-align: center;
     }
-    /* nav {
-        background-color: gray;
-    } */
+    nav {
+        padding: 10px 0;
+    }
+    #mobile-nav {
+        display: block;
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+        padding: 2px;
+    }
+    #mobile-nav span {
+        display: block;
+        margin: 7px;
+        height: 2px;
+        width: 20px;
+        background-color: black;
+    }
     nav ul {
         display: none;
     }
     #family {
         position: static;
         width: 100%;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     #intro {
         margin-top: 0;
